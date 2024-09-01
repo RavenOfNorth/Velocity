@@ -200,13 +200,16 @@ p {
 
 .about .cards-wrapper {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .about .card {
     padding: 35px 15px 25px 15px;
 
-    width: 300px;
+    width: auto;
+    max-width: 300px;
     border: 1px solid #DCEBF7;
     border-radius: 5px;
 }
@@ -342,10 +345,13 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px 40px;
 }
 
 .footer__desc .footer__container > * {
     width: 30%;
+    min-width: 230px;
 }
 
 .footer__desc a {
@@ -396,6 +402,7 @@ p {
 }
 
 .footer__copy {
+    margin-top: 40px;
     padding: 40px 0;
     text-align: center;
     background-color: #383838;
@@ -404,4 +411,6 @@ p {
 .footer__copy p {
     color: #9E9E9E;
 }
+
+
 
